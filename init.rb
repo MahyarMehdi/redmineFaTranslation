@@ -1,17 +1,11 @@
-require 'redmine'
+PLUGIN_NAME = 'redmine_fa_translation'
 
-base_path = File.dirname(__FILE__)
-if Rails.configuration.respond_to?(:autoloader) && Rails.configuration.autoloader == :zeitwerk
-  Rails.autoloaders.each { |loader| loader.ignore("#{base_path}/lib") }
-end
-
-Redmine::Plugin.register :redmineFaTranslation do
-  name 'Redmine Fa plugin'
-  author 'RNahal'
-  description 'This is an updated Persian Translation plugin for Redmine'
+Redmine::Plugin.register :redmine_fa_translation do
+  name 'Redmine FA Translation'
+  author 'Nahal'
+  description 'This plugin extends additional FA translations'
   version '0.1.0'
-  requires_redmine :version_or_higher => '4.0.0'
-  url 'https://nahal.app'
-end
+  url 'https://github.com/MahyarMehdi/redmine_fa_tanslation'
+  author_url 'https://nahal.app'
 
-(Loofah::VERSION >= "2.3.0" ? Loofah::HTML5::SafeList : Loofah::HTML5::WhiteList)::ALLOWED_PROTOCOLS.replace RedmineCkeditor.allowed_protocols
+end
