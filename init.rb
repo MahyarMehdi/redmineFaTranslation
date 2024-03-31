@@ -1,11 +1,11 @@
 PLUGIN_NAME = 'redmine_fa_translation'
 
 Redmine::Plugin.register :redmine_fa_translation do
-  name 'Time entries limit by estimation'
-  author 'DigitalWand'
-  description 'This plugin restricts user to spend more time for a task then specifien in task\'s estimation'
+  name 'Exclusive FA Translations by Nahal'
+  author 'Nahal Team'
+  description 'This plugin provides additional info for FA support on RedMine both for the language and how it looks'
   version '1.0.0'
-  url 'https://github.com/DigitalWand/time_entries_limit_by_estimation'
-  author_url 'https://github.com/DigitalWand'
+  url 'https://github.com/MahyarMehdi/redmineFaTranslation'
+  author_url 'https://nahal.app'
   
 end
